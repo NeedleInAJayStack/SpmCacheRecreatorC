@@ -1,0 +1,24 @@
+{
+  "originHash" : "366f3453486ce634518f0fe18c55cf8c0c7f09254c0bf5407cd5d8737c3d9e2c",
+  "pins" : [
+    {
+      "identity" : "spmcacherecreatora",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NeedleInAJayStack/SpmCacheRecreatorA.git",
+      "state" : {
+        "revision" : "d882c9805c998c1715653399c68e3329ddefc50e",
+        "version" : "0.0.1"
+      }
+    },
+    {
+      "identity" : "spmcacherecreatorb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NeedleInAJayStack/SpmCacheRecreatorB.git",
+      "state" : {
+        "revision" : "3ed97661397ad9250fa1083a7f101b8cfe027d5d",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

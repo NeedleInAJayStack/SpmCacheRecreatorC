@@ -8,17 +8,24 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SpmCacheRecreatorC",
-            targets: ["SpmCacheRecreatorC"]),
+            name: "C",
+            targets: ["C"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/NeedleInAJayStack/SpmCacheRecreatorB.git", exact: "0.0.1")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SpmCacheRecreatorC"),
+            name: "C",
+            dependencies: [
+                .product(name: "BSmall", package: "SpmCacheRecreatorB")
+            ]
+        ),
         .testTarget(
-            name: "SpmCacheRecreatorCTests",
-            dependencies: ["SpmCacheRecreatorC"]
+            name: "CTests",
+            dependencies: ["C"]
         ),
     ]
 )
